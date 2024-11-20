@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Assignment1" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#E43131</item> <!-- Toolbar & primary elements -->
+        <item name="colorPrimaryDark">#B22929</item> <!-- Status bar color -->
+        <item name="colorAccent">#FF5252</item> <!-- Highlight & button effects -->
+        <item name="colorOnPrimary">#FFFFFF</item> <!-- Toolbar text/icon color -->
+    </style>
+</resources>

@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.Assignment1" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#4CAF50</item> <!-- Green -->
+        <item name="colorPrimaryDark">#388E3C</item> <!-- Dark Green -->
+        <item name="colorAccent">#81C784</item> <!-- Light Green -->
+        <item name="colorOnPrimary">#FFFFFF</item> <!-- White text on green -->
+    </style>
+
+    <style name="Theme.Assignment1" parent="Base.Theme.Assignment1" />
+</resources>

@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ToolbarThemeWhite" />
+
+    <TextView
+        android:id="@+id/developerDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Developer Details"
+        android:textSize="16sp"
+        android:paddingBottom="16dp" />
+
+    <ImageView
+        android:id="@+id/aboutImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="Profile Picture"
+        android:scaleType="centerCrop"
+        android:src="@drawable/profilepicture" />
+
+    <TextView
+        android:id="@+id/Details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name: Nurul Izzati Binti Sidi Hamat\nClass: D1CDCS2405A\nMatric Number: 2022868332\nPhone Number: 013-3747689\nEmail: zaticdii@gmail.com"
+        android:textSize="16sp"
+        android:paddingBottom="16dp" />
+
+    <TextView
+        android:id="@+id/appIntroduction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to the Zakat Calculator App! This app helps Muslims easily calculate their zakat based on the value of gold they own. It provides a simple, user-friendly interface to help ensure that you fulfill your zakat obligations."
+        android:textSize="16sp"
+        android:paddingBottom="16dp"
+        android:justificationMode="inter_word"/>
+
+    <TextView
+        android:id="@+id/appPurpose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Our goal is to provide an accurate and convenient tool for zakat calculation, ensuring you can confidently manage your religious duties. With this app, you can calculate zakat based on your gold weight and its current value."
+        android:textSize="16sp"
+        android:paddingBottom="16dp"
+        android:justificationMode="inter_word"/>
+
+    <TextView
+        android:id="@+id/copyright"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Copyright © 2024 Zakat Calculator App"
+        android:textSize="16sp"
+        android:paddingBottom="16dp" />
+
+    <TextView
+        android:id="@+id/websiteLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:paddingBottom="16dp"
+        android:text="Visit our website: https://github.com/izzaticdi/ZakatCalculator"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="16sp" />
+
+</LinearLayout>
+
+
+
+

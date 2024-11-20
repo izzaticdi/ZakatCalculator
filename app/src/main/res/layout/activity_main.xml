@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        app:title="Zakat Calculator"
+        app:titleTextColor="?attr/colorOnPrimary" />
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/zakatimg" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoImageView"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:text="Gold Weight" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView3"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Enter weight in grams"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNumberDecimal"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:text="Current Gold Value" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimal2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView4"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Enter gold value/gram (RM)"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNumberDecimal2"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:text="Category" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView5"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioKeep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Keep"
+            android:checked="true"
+            android:layout_marginEnd="32dp" />
+
+        <RadioButton
+            android:id="@+id/radioWear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wear" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroup"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="?attr/colorPrimary"
+        android:text="Calculate" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:padding="10dp"/>
+
+</RelativeLayout>
+
+
+
